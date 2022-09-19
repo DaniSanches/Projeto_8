@@ -27,7 +27,7 @@ Partial Class Form1
         Me.TxtRgm = New System.Windows.Forms.TextBox()
         Me.lblNome = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.btnFechar = New System.Windows.Forms.Button()
+        Me.btnExibir = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblAluno
@@ -71,22 +71,22 @@ Partial Class Form1
         Me.TextBox1.Size = New System.Drawing.Size(260, 20)
         Me.TextBox1.TabIndex = 4
         '
-        'btnFechar
+        'btnExibir
         '
-        Me.btnFechar.Location = New System.Drawing.Point(311, 79)
-        Me.btnFechar.Name = "btnFechar"
-        Me.btnFechar.Size = New System.Drawing.Size(75, 23)
-        Me.btnFechar.TabIndex = 5
-        Me.btnFechar.Text = "Fechar"
-        Me.btnFechar.UseVisualStyleBackColor = True
-        Me.btnFechar.UseWaitCursor = True
+        Me.btnExibir.Location = New System.Drawing.Point(311, 79)
+        Me.btnExibir.Name = "btnExibir"
+        Me.btnExibir.Size = New System.Drawing.Size(75, 23)
+        Me.btnExibir.TabIndex = 5
+        Me.btnExibir.Text = "&Exibir"
+        Me.btnExibir.UseVisualStyleBackColor = True
+        Me.btnExibir.UseWaitCursor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.btnFechar)
+        Me.Controls.Add(Me.btnExibir)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.lblNome)
         Me.Controls.Add(Me.TxtRgm)
@@ -104,5 +104,5 @@ Partial Class Form1
     Friend WithEvents TxtRgm As TextBox
     Friend WithEvents lblNome As Label
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents btnFechar As Button
+    Friend WithEvents btnExibir As Button
 End Class
