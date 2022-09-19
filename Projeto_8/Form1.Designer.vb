@@ -26,8 +26,14 @@ Partial Class Form1
         Me.lblRgm = New System.Windows.Forms.Label()
         Me.TxtRgm = New System.Windows.Forms.TextBox()
         Me.lblNome = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TxtAluno = New System.Windows.Forms.TextBox()
         Me.btnExibir = New System.Windows.Forms.Button()
+        Me.lblProfessor = New System.Windows.Forms.Label()
+        Me.rgmProfe = New System.Windows.Forms.Label()
+        Me.TxtRgmProf = New System.Windows.Forms.TextBox()
+        Me.TxtProf = New System.Windows.Forms.TextBox()
+        Me.lblNomeProf = New System.Windows.Forms.Label()
+        Me.btnexibirProf = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblAluno
@@ -64,12 +70,12 @@ Partial Class Form1
         Me.lblNome.TabIndex = 3
         Me.lblNome.Text = "Nome"
         '
-        'TextBox1
+        'TxtAluno
         '
-        Me.TextBox1.Location = New System.Drawing.Point(126, 124)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(260, 20)
-        Me.TextBox1.TabIndex = 4
+        Me.TxtAluno.Location = New System.Drawing.Point(126, 124)
+        Me.TxtAluno.Name = "TxtAluno"
+        Me.TxtAluno.Size = New System.Drawing.Size(164, 20)
+        Me.TxtAluno.TabIndex = 4
         '
         'btnExibir
         '
@@ -81,13 +87,70 @@ Partial Class Form1
         Me.btnExibir.UseVisualStyleBackColor = True
         Me.btnExibir.UseWaitCursor = True
         '
+        'lblProfessor
+        '
+        Me.lblProfessor.AutoSize = True
+        Me.lblProfessor.Location = New System.Drawing.Point(85, 192)
+        Me.lblProfessor.Name = "lblProfessor"
+        Me.lblProfessor.Size = New System.Drawing.Size(51, 13)
+        Me.lblProfessor.TabIndex = 6
+        Me.lblProfessor.Text = "Professor"
+        '
+        'rgmProfe
+        '
+        Me.rgmProfe.AutoSize = True
+        Me.rgmProfe.Location = New System.Drawing.Point(85, 234)
+        Me.rgmProfe.Name = "rgmProfe"
+        Me.rgmProfe.Size = New System.Drawing.Size(38, 13)
+        Me.rgmProfe.TabIndex = 7
+        Me.rgmProfe.Text = "RGM: "
+        '
+        'TxtRgmProf
+        '
+        Me.TxtRgmProf.Location = New System.Drawing.Point(126, 231)
+        Me.TxtRgmProf.Name = "TxtRgmProf"
+        Me.TxtRgmProf.Size = New System.Drawing.Size(164, 20)
+        Me.TxtRgmProf.TabIndex = 8
+        '
+        'TxtProf
+        '
+        Me.TxtProf.Location = New System.Drawing.Point(126, 283)
+        Me.TxtProf.Name = "TxtProf"
+        Me.TxtProf.Size = New System.Drawing.Size(164, 20)
+        Me.TxtProf.TabIndex = 9
+        '
+        'lblNomeProf
+        '
+        Me.lblNomeProf.AutoSize = True
+        Me.lblNomeProf.Location = New System.Drawing.Point(85, 290)
+        Me.lblNomeProf.Name = "lblNomeProf"
+        Me.lblNomeProf.Size = New System.Drawing.Size(35, 13)
+        Me.lblNomeProf.TabIndex = 10
+        Me.lblNomeProf.Text = "Nome"
+        '
+        'btnexibirProf
+        '
+        Me.btnexibirProf.Location = New System.Drawing.Point(311, 229)
+        Me.btnexibirProf.Name = "btnexibirProf"
+        Me.btnexibirProf.Size = New System.Drawing.Size(75, 23)
+        Me.btnexibirProf.TabIndex = 11
+        Me.btnexibirProf.Text = "&Exibir"
+        Me.btnexibirProf.UseVisualStyleBackColor = True
+        Me.btnexibirProf.UseWaitCursor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnexibirProf)
+        Me.Controls.Add(Me.lblNomeProf)
+        Me.Controls.Add(Me.TxtProf)
+        Me.Controls.Add(Me.TxtRgmProf)
+        Me.Controls.Add(Me.rgmProfe)
+        Me.Controls.Add(Me.lblProfessor)
         Me.Controls.Add(Me.btnExibir)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.TxtAluno)
         Me.Controls.Add(Me.lblNome)
         Me.Controls.Add(Me.TxtRgm)
         Me.Controls.Add(Me.lblRgm)
@@ -103,6 +166,12 @@ Partial Class Form1
     Friend WithEvents lblRgm As Label
     Friend WithEvents TxtRgm As TextBox
     Friend WithEvents lblNome As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TxtAluno As TextBox
     Friend WithEvents btnExibir As Button
+    Friend WithEvents lblProfessor As Label
+    Friend WithEvents rgmProfe As Label
+    Friend WithEvents TxtRgmProf As TextBox
+    Friend WithEvents TxtProf As TextBox
+    Friend WithEvents lblNomeProf As Label
+    Friend WithEvents btnexibirProf As Button
 End Class
